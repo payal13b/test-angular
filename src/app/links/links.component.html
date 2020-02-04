@@ -1,0 +1,33 @@
+<!-- <div>
+    <p>Click on the below link.</p>
+    <p><a href="#/!">https://www.google.com/</a></p> 
+    <p><u>https://www.google.com/</u></p>
+
+    <div> <a routerLink="/destinations">Home</a> </div>
+
+    <input type="URL" name="myURL" [(ngModel)]="myURL" placeholder="https://www.google.com/" (change)="onURLinserted() ">
+
+    <img [src]="product.image" alt="An image" class="img">
+</div> -->
+
+ <div>
+    <p>
+      <a routerLink="links/red" routerLinkActive="disabled">https://www.google.com</a>
+      <!--<a href="/links/red" routerLinkActive="disabled">https://www.google.com</a>-->
+    </p>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+</div> 
+
+<!-- <div ng-view></div>
+
+<script>
+var app = angular.module("test-app", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "assets/Images/img1.jpg"
+    });
+});
+</script> -->

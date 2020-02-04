@@ -1,0 +1,27 @@
+<div>
+  <span>Select Product </span>
+  <select (change)= "changeProducts($event)">
+    <option>--- Select ---</option>
+    <option *ngFor="let product of products">{{product.name}}</option>
+  </select>
+</div>
+
+<div>
+<!-- <ul> -->
+  <!-- <li *ngFor="let data of changeFilterData">{{data.value}}</li> -->
+  <table>
+    <tr>
+      <th>Product</th>
+    </tr>
+      <tr>
+        <td>{{changeFilterData.name}}</td>
+      </tr>
+      <tr>
+        <td>{{changeFilterData.description}}</td>
+      </tr>
+      <tr>
+        <td>{{changeFilterData.Quantity}}</td>
+      </tr>
+  </table>
+<!-- </ul> -->
+</div>
